@@ -1,4 +1,5 @@
 import './App.css';
+import InputForm from './components/InputForm';
 import Navbar from './components/Navbar';
 function App() {
   let prop = {
@@ -8,6 +9,10 @@ function App() {
   }
   let val = <>     
               <Navbar {...prop} />
+              <div className="container my-3">
+              <InputForm heading = "Enter text to Amend"/>
+              </div>
+              
             </>
   return (
     val
